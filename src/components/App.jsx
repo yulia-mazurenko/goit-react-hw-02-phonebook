@@ -4,7 +4,11 @@ import { nanoid } from 'nanoid';
 import ContactForm from './ContactForm';
 import ContactList from './ContactList';
 import Filter from './Filter';
-import { PhoneBookTitle, ListTitle } from '../components/Titles/Titles.styled';
+import {
+  PhoneBookTitle,
+  ListTitle,
+  Wrapper,
+} from '../components/Titles/Titles.styled';
 
 export class App extends Component {
   state = {
@@ -62,7 +66,7 @@ export class App extends Component {
     const filteredContacts = this.getFilteredContacts();
     const { filter } = this.state;
     return (
-      <div>
+      <Wrapper>
         <PhoneBookTitle>PhoneBook</PhoneBookTitle>
         <ContactForm onSubmitForm={this.addContact} />
         <ListTitle>Contacts</ListTitle>
@@ -71,7 +75,7 @@ export class App extends Component {
           contacts={filteredContacts}
           onDeleteContact={this.deleteContact}
         />
-      </div>
+      </Wrapper>
     );
   }
 }

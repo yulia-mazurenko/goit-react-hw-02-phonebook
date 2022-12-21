@@ -15,3 +15,8 @@ export const ListTitle = styled.h2`
 
   margin-bottom: ${p => p.theme.space[3]}px;
 `;
+
+export const Wrapper = styled.div`
+  padding: 30px;
+  width: ${p => p.theme.sizes.wrapper};
+`;

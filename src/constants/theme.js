@@ -21,6 +21,7 @@ export const theme = {
     button: '150px',
     form: '350px',
     input: '250px',
+    wrapper: '410px',
   },
 
   fontSizes: {
