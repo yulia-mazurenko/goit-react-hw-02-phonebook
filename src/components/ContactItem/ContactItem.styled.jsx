@@ -33,4 +33,5 @@ export const DeleteButton = styled.button`
 
 export const Text = styled.p`
   color: ${p => p.theme.colors.black};
+  padding-left: ${p => p.theme.space[3]}px;
 `;
